@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+  .column{
+    @apply flex justify-center items-center flex-none h-[100px] w-[100px]
+     bg-neutral-800 border-4 border-neutral-800 rounded-md cursor-pointer
+     active:ring active:ring-emerald-400 max-sm:small-device-column
+  }
+  .small-device-column{
+    @apply flex justify-center items-center flex-none h-[60px] w-[60px]
+     bg-neutral-800 border-4 border-neutral-800 rounded-md cursor-pointer
+     active:ring active:ring-emerald-400
+  }
+}
